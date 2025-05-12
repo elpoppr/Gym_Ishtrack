@@ -2,7 +2,7 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ไูวใ ลฯวัษ วแใิสั฿ํไ - วแรศุวแ ฬํใ</title>
+  <title>ูุธุงู… ุฅุฏุงุฑุฉ ุงูู…ุดุชุฑููู - ุงูุฃุจุทุงู ุฌูู…</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
@@ -49,11 +49,11 @@
 
 <div id="loginScreen" class="fixed inset-0 bg-gray-100 flex items-center justify-center z-50">
   <div class="bg-white p-6 rounded-xl shadow-lg w-full max-w-sm text-center space-y-4">
-    <h2 class="text-xl font-bold text-gray-800">สำฬํแ วแฯฮๆแ</h2>
-    <input id="username" type="text" placeholder="วำใ วแใำสฮฯใ" class="w-full p-2 border rounded" />
-    <input id="password" type="password" placeholder="฿แใษ วแใัๆั" class="w-full p-2 border rounded" />
-    <button onclick="login()" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">ฯฮๆแ</button>
-    <p id="loginError" class="text-red-500 text-sm hidden">ศํวไวส วแฯฮๆแ Ûํั ีอํอษ</p>
+    <h2 class="text-xl font-bold text-gray-800">ุชุณุฌูู ุงูุฏุฎูู</h2>
+    <input id="username" type="text" placeholder="ุงุณู… ุงูู…ุณุชุฎุฏู…" class="w-full p-2 border rounded" />
+    <input id="password" type="password" placeholder="ููู…ุฉ ุงูู…ุฑูุฑ" class="w-full p-2 border rounded" />
+    <button onclick="login()" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">ุฏุฎูู</button>
+    <p id="loginError" class="text-red-500 text-sm hidden">ุจูุงูุงุช ุงูุฏุฎูู ุบูุฑ ุตุญูุญุฉ</p>
   </div>
 </div>
 
@@ -62,92 +62,92 @@
     <!-- Header with Gym Info -->
     <div class="header text-white p-4 sm:p-6 text-center">
       <div class="flex justify-between items-center flex-wrap gap-4">
-        <!-- วแ฿วศสไ ฺแ์ วแํใํไ -->
-        <img src="captain.jpg" alt="ีๆัษ วแ฿วศสไ" class="logo-img order-2 sm:order-1" onerror="this.style.display='none'">
+        <!-- ุงููุงุจุชู ุนูู ุงููู…ูู -->
+        <img src="captain.jpg" alt="ุตูุฑุฉ ุงููุงุจุชู" class="logo-img order-2 sm:order-1" onerror="this.style.display='none'">
         
         <div class="text-center flex-1 order-1 sm:order-2">
-          <h1 class="text-xl sm:text-2xl font-bold responsive-text">วแรศุวแ ฬํใ</h1>
-          <p class="text-blue-200 text-sm sm:text-base">ลฯวัษ วแ฿วศสไ/ใอใฯ ฺแํ - 01121966440</p>
+          <h1 class="text-xl sm:text-2xl font-bold responsive-text">ุงูุฃุจุทุงู ุฌูู…</h1>
+          <p class="text-blue-200 text-sm sm:text-base">ุฅุฏุงุฑุฉ ุงููุงุจุชู/ู…ุญู…ุฏ ุนูู - 01121966440</p>
         </div>
         
-        <!-- วแแๆฬๆ ฺแ์ วแํำวั -->
-        <img src="gym_logo.jpg" alt="ิฺวั วแรศุวแ ฬํใ" class="logo-img order-3 sm:order-3" onerror="this.style.display='none'">
+        <!-- ุงูููุฌู ุนูู ุงููุณุงุฑ -->
+        <img src="gym_logo.jpg" alt="ุดุนุงุฑ ุงูุฃุจุทุงู ุฌูู…" class="logo-img order-3 sm:order-3" onerror="this.style.display='none'">
       </div>
     </div>
 
     <div class="p-4 sm:p-6">
-      <!-- แๆอษ วแสอ฿ใ วแลอีวฦํษ -->
+      <!-- ููุญุฉ ุงูุชุญูู… ุงูุฅุญุตุงุฆูุฉ -->
       <div id="dashboard" class="grid grid-cols-1 sm:grid-cols-4 gap-4 mb-6 no-print">
         <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
-          <h3 class="font-bold text-blue-800">ลฬใวแํ วแใิสั฿ํไ</h3>
+          <h3 class="font-bold text-blue-800">ุฅุฌู…ุงูู ุงูู…ุดุชุฑููู</h3>
           <p id="totalMembers" class="text-xl sm:text-2xl font-bold">0</p>
         </div>
         <div class="bg-green-50 p-4 rounded-lg border border-green-100">
-          <h3 class="font-bold text-green-800">ลฬใวแํ วแลํัวฯวส</h3>
-          <p id="totalRevenue" class="text-xl sm:text-2xl font-bold">0 ฬ.ใ</p>
+          <h3 class="font-bold text-green-800">ุฅุฌู…ุงูู ุงูุฅูุฑุงุฏุงุช</h3>
+          <p id="totalRevenue" class="text-xl sm:text-2xl font-bold">0 ุฌ.ู…</p>
         </div>
         <div class="bg-yellow-50 p-4 rounded-lg border border-yellow-100">
-          <h3 class="font-bold text-yellow-800">วแใฯÝๆฺ วแํๆใ</h3>
-          <p id="dailyRevenue" class="text-xl sm:text-2xl font-bold">0 ฬ.ใ</p>
+          <h3 class="font-bold text-yellow-800">ุงูู…ุฏููุน ุงูููู…</h3>
+          <p id="dailyRevenue" class="text-xl sm:text-2xl font-bold">0 ุฌ.ู…</p>
         </div>
         <div class="bg-red-50 p-4 rounded-lg border border-red-100">
-          <h3 class="font-bold text-red-800">วแฯํๆไ</h3>
-          <p id="totalDebts" class="text-xl sm:text-2xl font-bold">0 ฬ.ใ</p>
+          <h3 class="font-bold text-red-800">ุงูุฏููู</h3>
+          <p id="totalDebts" class="text-xl sm:text-2xl font-bold">0 ุฌ.ู…</p>
         </div>
       </div>
 
-      <!-- รฯๆวส วแสีฯํั ๆวแวำสํัวฯ -->
+      <!-- ุฃุฏูุงุช ุงูุชุตุฏูุฑ ูุงูุงุณุชูุฑุงุฏ -->
       <div class="flex flex-col sm:flex-row gap-2 mb-4 no-print">
         <button onclick="exportData()" class="flex items-center justify-center gap-1 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
           </svg>
-          สีฯํั วแศํวไวส
+          ุชุตุฏูุฑ ุงูุจูุงูุงุช
         </button>
         <button onclick="document.getElementById('importFile').click()" class="flex items-center justify-center gap-1 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
           </svg>
-          วำสํัวฯ วแศํวไวส
+          ุงุณุชูุฑุงุฏ ุงูุจูุงูุงุช
         </button>
         <input type="file" id="importFile" accept=".json" class="hidden" onchange="importData(this)">
       </div>
 
-      <!-- ไูวใ วแÝแสัษ ๆวแศอห -->
+      <!-- ูุธุงู… ุงูููุชุฑุฉ ูุงูุจุญุซ -->
       <div class="mb-4 no-print">
-        <input type="text" id="searchInput" placeholder="วศอห ฺไ ใิสั฿..." 
+        <input type="text" id="searchInput" placeholder="ุงุจุญุซ ุนู ู…ุดุชุฑู..." 
               class="border p-2 rounded w-full" oninput="filterMembers()">
               
         <select id="membershipTypeFilter" class="border p-2 rounded mt-2 w-full sm:w-auto" onchange="filterMembers()">
-          <option value="">฿แ รไๆวฺ วแวิสัว฿วส</option>
-          <option value="ิๅัํ">วิสัว฿ ิๅัํ</option>
-          <option value="ํๆใํ">วิสัว฿ ํๆใํ</option>
-          <option value="VIP">ฺึๆ VIP</option>
+          <option value="">ูู ุฃููุงุน ุงูุงุดุชุฑุงูุงุช</option>
+          <option value="ุดูุฑู">ุงุดุชุฑุงู ุดูุฑู</option>
+          <option value="ููู…ู">ุงุดุชุฑุงู ููู…ู</option>
+          <option value="VIP">ุนุถู VIP</option>
         </select>
       </div>
 
       <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-2">
-        <h2 class="text-lg sm:text-xl font-bold text-gray-800">ำฬแ วแใิสั฿ํไ</h2>
+        <h2 class="text-lg sm:text-xl font-bold text-gray-800">ุณุฌู ุงูู…ุดุชุฑููู</h2>
         <div class="flex gap-2 w-full sm:w-auto">
           <button id="addBtn" class="flex items-center justify-center gap-1 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded no-print w-full sm:w-auto">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" />
             </svg>
-            ลึวÝษ ใิสั฿
+            ุฅุถุงูุฉ ู…ุดุชุฑู
           </button>
           
           <button id="logoutBtn" class="flex items-center justify-center gap-1 bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded no-print w-full sm:w-auto">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h10a1 1 0 110 2H5v10h9a1 1 0 110 2H4a1 1 0 01-1-1V4zm11.293 4.293a1 1 0 011.414 0L18 10.586l-2.293 2.293a1 1 0 11-1.414-1.414L15.586 11H9a1 1 0 110-2h6.586l-1.293-1.293a1 1 0 010-1.414z" clip-rule="evenodd" />
             </svg>
-            สำฬํแ วแฮัๆฬ
+            ุชุณุฌูู ุงูุฎุฑูุฌ
           </button>
 
           <button id="printBtn" class="flex items-center justify-center gap-1 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded no-print w-full sm:w-auto">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M5 4v3H4a2 2 0 00-2 2v3a2 2 0 002 2h1v2a2 2 0 002 2h6a2 2 0 002-2v-2h1a2 2 0 002-2V9a2 2 0 00-2-2h-1V4a2 2 0 00-2-2H7a2 2 0 00-2 2zm8 0H7v3h6V4zm0 8H7v4h6v-4z" clip-rule="evenodd" />
             </svg>
-            ุศวฺษ
+            ุทุจุงุนุฉ
           </button>
         </div>
       </div>
@@ -156,7 +156,7 @@
       <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50 no-print">
         <div class="bg-white p-4 sm:p-6 rounded-2xl w-full max-w-lg mx-4 overflow-y-auto max-h-[90vh]">
           <div class="flex justify-between items-center mb-4">
-            <h3 id="modalTitle" class="text-lg font-bold text-gray-800">ลึวÝษ ใิสั฿ ฬฯํฯ</h3>
+            <h3 id="modalTitle" class="text-lg font-bold text-gray-800">ุฅุถุงูุฉ ู…ุดุชุฑู ุฌุฏูุฏ</h3>
             <button id="closeModal" class="text-gray-500 hover:text-gray-700">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -167,114 +167,114 @@
           <form id="member-form" class="flex flex-col gap-4">
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">วำใ วแใิสั฿</label>
-                <input type="text" id="name" placeholder="วำใ วแใิสั฿" required class="w-full border p-2 rounded focus:ring-2 focus:ring-blue-500 focus:border-blue-500" />
+                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">ุงุณู… ุงูู…ุดุชุฑู</label>
+                <input type="text" id="name" placeholder="ุงุณู… ุงูู…ุดุชุฑู" required class="w-full border p-2 rounded focus:ring-2 focus:ring-blue-500 focus:border-blue-500" />
               </div>
               <div>
-                <label for="weight" class="block text-sm font-medium text-gray-700 mb-1">วแๆาไ (฿ฬใ)</label>
-                <input type="number" id="weight" placeholder="วแๆาไ ศวแ฿ํแๆฬัวใ" min="30" max="200" class="w-full border p-2 rounded focus:ring-2 focus:ring-blue-500 focus:border-blue-500" />
+                <label for="weight" class="block text-sm font-medium text-gray-700 mb-1">ุงููุฒู (ูุฌู…)</label>
+                <input type="number" id="weight" placeholder="ุงููุฒู ุจุงูููููุฌุฑุงู…" min="30" max="200" class="w-full border p-2 rounded focus:ring-2 focus:ring-blue-500 focus:border-blue-500" />
               </div>
             </div>
             
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">ัÞใ วแๅวสÝ</label>
-                <input type="tel" id="phone" placeholder="ัÞใ วแๅวสÝ" required class="w-full border p-2 rounded focus:ring-2 focus:ring-blue-500 focus:border-blue-500" pattern="0[0-9]{10}" title="ัÞใ ๅวสÝ ใ฿ๆไ ใไ 11 ัÞใ ํศฯร ศÜ0" />
+                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">ุฑูู… ุงููุงุชู</label>
+                <input type="tel" id="phone" placeholder="ุฑูู… ุงููุงุชู" required class="w-full border p-2 rounded focus:ring-2 focus:ring-blue-500 focus:border-blue-500" pattern="0[0-9]{10}" title="ุฑูู… ูุงุชู ู…ููู ู…ู 11 ุฑูู… ูุจุฏุฃ ุจู€0" />
               </div>
               <div>
-                <label for="nationalId" class="block text-sm font-medium text-gray-700 mb-1">วแัÞใ วแสำแำแํ</label>
-                <input type="number" id="nationalId" placeholder="วแัÞใ วแสำแำแํ" required class="w-full border p-2 rounded focus:ring-2 focus:ring-blue-500 focus:border-blue-500" min="0" max="999" title="วแัÞใ วแสำแำแํ ศํไ 0 ๆ999" />
+                <label for="nationalId" class="block text-sm font-medium text-gray-700 mb-1">ุงูุฑูู… ุงูุชุณูุณูู</label>
+                <input type="number" id="nationalId" placeholder="ุงูุฑูู… ุงูุชุณูุณูู" required class="w-full border p-2 rounded focus:ring-2 focus:ring-blue-500 focus:border-blue-500" min="0" max="999" title="ุงูุฑูู… ุงูุชุณูุณูู ุจูู 0 ู999" />
               </div>
             </div>
             
             <div class="border-t pt-4">
-              <h4 class="font-medium text-gray-700 mb-2">ไๆฺ วแวิสัว฿</h4>
+              <h4 class="font-medium text-gray-700 mb-2">ููุน ุงูุงุดุชุฑุงู</h4>
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <label class="flex items-center gap-2 p-2 border rounded hover:bg-gray-50">
-                  <input type="radio" name="membershipType" value="ิๅัํ" class="rounded text-blue-600" checked />
-                  <span>วิสัว฿ ิๅัํ (120 ฬ.ใ)</span>
+                  <input type="radio" name="membershipType" value="ุดูุฑู" class="rounded text-blue-600" checked />
+                  <span>ุงุดุชุฑุงู ุดูุฑู (120 ุฌ.ู…)</span>
                 </label>
                 
                 <label class="flex items-center gap-2 p-2 border rounded hover:bg-gray-50">
-                  <input type="radio" name="membershipType" value="ํๆใํ" class="rounded text-blue-600" />
-                  <span>วิสัว฿ ํๆใํ (15 ฬ.ใ)</span>
+                  <input type="radio" name="membershipType" value="ููู…ู" class="rounded text-blue-600" />
+                  <span>ุงุดุชุฑุงู ููู…ู (15 ุฌ.ู…)</span>
                 </label>
                 
                 <label class="flex items-center gap-2 p-2 border rounded hover:bg-gray-50">
                   <input type="radio" name="membershipType" value="VIP" class="rounded text-blue-600" />
-                  <span>ฺึๆ VIP (1000 ฬ.ใ)</span>
+                  <span>ุนุถู VIP (1000 ุฌ.ู…)</span>
                 </label>
               </div>
             </div>
             
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label for="amount" class="block text-sm font-medium text-gray-700 mb-1">วแใศแÛ วแใฯÝๆฺ</label>
-                <input type="number" id="amount" placeholder="วแใศแÛ ศวแฬไํๅ วแใีัํ" min="0" class="w-full border p-2 rounded focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required />
+                <label for="amount" class="block text-sm font-medium text-gray-700 mb-1">ุงูู…ุจูุบ ุงูู…ุฏููุน</label>
+                <input type="number" id="amount" placeholder="ุงูู…ุจูุบ ุจุงูุฌููู ุงูู…ุตุฑู" min="0" class="w-full border p-2 rounded focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required />
               </div>
               <div>
-                <label for="debt" class="block text-sm font-medium text-gray-700 mb-1">วแใสศÞํ (ฯํๆไ)</label>
-                <input type="number" id="debt" placeholder="วแใศแÛ วแใสศÞํ" min="0" class="w-full border p-2 rounded focus:ring-2 focus:ring-blue-500 focus:border-blue-500" value="0" />
+                <label for="debt" class="block text-sm font-medium text-gray-700 mb-1">ุงูู…ุชุจูู (ุฏููู)</label>
+                <input type="number" id="debt" placeholder="ุงูู…ุจูุบ ุงูู…ุชุจูู" min="0" class="w-full border p-2 rounded focus:ring-2 focus:ring-blue-500 focus:border-blue-500" value="0" />
               </div>
             </div>
             
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label for="startDate" class="block text-sm font-medium text-gray-700 mb-1">สวัํฮ ศฯม วแวิสัว฿</label>
+                <label for="startDate" class="block text-sm font-medium text-gray-700 mb-1">ุชุงุฑูุฎ ุจุฏุก ุงูุงุดุชุฑุงู</label>
                 <input type="date" id="startDate" class="w-full border p-2 rounded focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required />
               </div>
               <div>
-                <label for="endDate" class="block text-sm font-medium text-gray-700 mb-1">สวัํฮ วไสๅวม วแวิสัว฿</label>
+                <label for="endDate" class="block text-sm font-medium text-gray-700 mb-1">ุชุงุฑูุฎ ุงูุชูุงุก ุงูุงุดุชุฑุงู</label>
                 <input type="date" id="endDate" class="w-full border p-2 rounded focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required />
               </div>
             </div>
             
             <div>
-              <label for="trainer" class="block text-sm font-medium text-gray-700 mb-1">วแใฯัศ วแใำฤๆแ</label>
+              <label for="trainer" class="block text-sm font-medium text-gray-700 mb-1">ุงูู…ุฏุฑุจ ุงูู…ุณุคูู</label>
               <select id="trainer" class="w-full border p-2 rounded focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                <option value="วแ฿วศสไ ใอใฯ ฺแํ">วแ฿วศสไ ใอใฯ ฺแํ</option>
-                <option value="วแใฯัศ รอใฯ ำฺํฯ">วแใฯัศ รอใฯ ำฺํฯ</option>
-                <option value="วแใฯัศษ ใัํใ ฮวแฯ">วแใฯัศษ ใัํใ ฮวแฯ</option>
-                <option value="แว ํๆฬฯ">แว ํๆฬฯ</option>
+                <option value="ุงููุงุจุชู ู…ุญู…ุฏ ุนูู">ุงููุงุจุชู ู…ุญู…ุฏ ุนูู</option>
+                <option value="ุงูู…ุฏุฑุจ ุฃุญู…ุฏ ุณุนูุฏ">ุงูู…ุฏุฑุจ ุฃุญู…ุฏ ุณุนูุฏ</option>
+                <option value="ุงูู…ุฏุฑุจุฉ ู…ุฑูู… ุฎุงูุฏ">ุงูู…ุฏุฑุจุฉ ู…ุฑูู… ุฎุงูุฏ</option>
+                <option value="ูุง ููุฌุฏ">ูุง ููุฌุฏ</option>
               </select>
             </div>
             
             <div>
-              <label for="attachment" class="block text-sm font-medium text-gray-700 mb-1">สอใํแ ีๆัษ วแศุวÞษ (วฮสํวัํ)</label>
+              <label for="attachment" class="block text-sm font-medium text-gray-700 mb-1">ุชุญู…ูู ุตูุฑุฉ ุงูุจุทุงูุฉ (ุงุฎุชูุงุฑู)</label>
               <input type="file" id="attachment" accept="image/*" class="w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100" />
             </div>
             
             <div class="flex justify-end gap-4 mt-4 pt-4 border-t">
-              <button type="button" id="cancelBtn" class="px-4 py-2 bg-gray-300 hover:bg-gray-400 rounded">ลแÛวม</button>
+              <button type="button" id="cancelBtn" class="px-4 py-2 bg-gray-300 hover:bg-gray-400 rounded">ุฅูุบุงุก</button>
               <button type="submit" class="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded flex items-center gap-1">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                 </svg>
-                อÝู
+                ุญูุธ
               </button>
             </div>
           </form>
         </div>
       </div>
 
-      <!-- ฬฯๆแ ฺัึ วแศํวไวส -->
+      <!-- ุฌุฏูู ุนุฑุถ ุงูุจูุงูุงุช -->
       <div id="membersTable" class="mt-4 overflow-x-auto">
         <table class="w-full text-sm border-collapse">
           <thead class="bg-gray-100">
             <tr>
-              <th class="border p-2 sm:p-3 text-right">วแวำใ</th>
-              <th class="border p-2 sm:p-3">วแๅวสÝ</th>
-              <th class="border p-2 sm:p-3">วแๆาไ</th>
-              <th class="border p-2 sm:p-3">ไๆฺ วแวิสัว฿</th>
-              <th class="border p-2 sm:p-3">วแใฯÝๆฺ</th>
-              <th class="border p-2 sm:p-3">วแใสศÞํ</th>
-              <th class="border p-2 sm:p-3">สวัํฮ วแวไสๅวม</th>
-              <th class="border p-2 sm:p-3">วแใฯัศ</th>
-              <th class="border p-2 sm:p-3 no-print">วแลฬัวมวส</th>
+              <th class="border p-2 sm:p-3 text-right">ุงูุงุณู…</th>
+              <th class="border p-2 sm:p-3">ุงููุงุชู</th>
+              <th class="border p-2 sm:p-3">ุงููุฒู</th>
+              <th class="border p-2 sm:p-3">ููุน ุงูุงุดุชุฑุงู</th>
+              <th class="border p-2 sm:p-3">ุงูู…ุฏููุน</th>
+              <th class="border p-2 sm:p-3">ุงูู…ุชุจูู</th>
+              <th class="border p-2 sm:p-3">ุชุงุฑูุฎ ุงูุงูุชูุงุก</th>
+              <th class="border p-2 sm:p-3">ุงูู…ุฏุฑุจ</th>
+              <th class="border p-2 sm:p-3 no-print">ุงูุฅุฌุฑุงุกุงุช</th>
             </tr>
           </thead>
           <tbody id="tableBody" class="bg-white">
-            <!-- วแศํวไวส สึวÝ ๅไว ฺศั JavaScript -->
+            <!-- ุงูุจูุงูุงุช ุชุถุงู ููุง ุนุจุฑ JavaScript -->
           </tbody>
         </table>
       </div>
@@ -283,15 +283,15 @@
       <footer class="mt-8 pt-4 border-t text-center text-sm text-gray-500 no-print">
         <div class="flex flex-col sm:flex-row justify-around items-center mt-6 signature-box gap-4">
           <div>
-            <p class="mb-1">วแใฯํั วแฺวใ</p>
-            <p class="font-bold">วแ฿วศสไ/ ใอใฯ ฺแํ</p>
+            <p class="mb-1">ุงูู…ุฏูุฑ ุงูุนุงู…</p>
+            <p class="font-bold">ุงููุงุจุชู/ ู…ุญู…ุฏ ุนูู</p>
           </div>
           <div>
-            <p class="mb-1">ใุๆั วแไูวใ</p>
-            <p class="font-bold">วแศวิใศัใฬ/ใอใฯ ลํๅวศ</p>
+            <p class="mb-1">ู…ุทูุฑ ุงููุธุงู…</p>
+            <p class="font-bold">ุงูุจุงุดู…ุจุฑู…ุฌ/ู…ุญู…ุฏ ุฅููุงุจ</p>
           </div>
         </div>
-        <p class="mt-6">ฬใํฺ วแอÞๆÞ ใอÝๆูษ &copy; <span id="currentYear"></span> วแรศุวแ ฬํใ</p>
+        <p class="mt-6">ุฌู…ูุน ุงูุญููู ู…ุญููุธุฉ &copy; <span id="currentYear"></span> ุงูุฃุจุทุงู ุฌูู…</p>
       </footer>
     </div>
   </div>
@@ -334,20 +334,20 @@
     function updateDashboard() {
       document.getElementById('totalMembers').textContent = members.length;
       
-      // อำวศ วแลํัวฯวส (วแใฯÝๆฺ ÝÞุ)
+      // ุญุณุงุจ ุงูุฅูุฑุงุฏุงุช (ุงูู…ุฏููุน ููุท)
       const totalPaid = members.reduce((sum, member) => sum + parseInt(member.amount || 0), 0);
-      document.getElementById('totalRevenue').textContent = totalPaid + ' ฬ.ใ';
+      document.getElementById('totalRevenue').textContent = totalPaid + ' ุฌ.ู…';
       
-      // อำวศ วแใฯÝๆฺ วแํๆใ
+      // ุญุณุงุจ ุงูู…ุฏููุน ุงูููู…
       const today = new Date().toISOString().split('T')[0];
       const dailyRevenue = members
         .filter(member => member.joinDate === today)
         .reduce((sum, member) => sum + parseInt(member.amount || 0), 0);
-      document.getElementById('dailyRevenue').textContent = dailyRevenue + ' ฬ.ใ';
+      document.getElementById('dailyRevenue').textContent = dailyRevenue + ' ุฌ.ู…';
       
-      // อำวศ วแฯํๆไ
+      // ุญุณุงุจ ุงูุฏููู
       const totalDebts = members.reduce((sum, member) => sum + parseInt(member.debt || 0), 0);
-      document.getElementById('totalDebts').textContent = totalDebts + ' ฬ.ใ';
+      document.getElementById('totalDebts').textContent = totalDebts + ' ุฌ.ู…';
     }
 
     function openModal(editId = null) {
@@ -361,7 +361,7 @@
       document.getElementById('endDate').valueAsDate = endDate;
       
       if (editId !== null) {
-        document.getElementById('modalTitle').textContent = 'สฺฯํแ ศํวไวส ใิสั฿';
+        document.getElementById('modalTitle').textContent = 'ุชุนุฏูู ุจูุงูุงุช ู…ุดุชุฑู';
         const member = members[editId];
         
         document.getElementById('name').value = member.name;
@@ -379,7 +379,7 @@
         
         editIndex = editId;
       } else {
-        document.getElementById('modalTitle').textContent = 'ลึวÝษ ใิสั฿ ฬฯํฯ';
+        document.getElementById('modalTitle').textContent = 'ุฅุถุงูุฉ ู…ุดุชุฑู ุฌุฏูุฏ';
         editIndex = null;
       }
     }
@@ -420,7 +420,7 @@
       if (filteredMembers.length === 0) {
         tableBody.innerHTML = `
           <tr>
-            <td colspan="9" class="border p-4 text-center text-gray-500">แว สๆฬฯ ไสวฦฬ ใุวศÞษ</td>
+            <td colspan="9" class="border p-4 text-center text-gray-500">ูุง ุชูุฌุฏ ูุชุงุฆุฌ ู…ุทุงุจูุฉ</td>
           </tr>
         `;
         return;
@@ -438,30 +438,30 @@
         row.innerHTML = `
           <td class="border p-2 sm:p-3 ${isExpired ? 'text-red-600' : ''}">${member.name}</td>
           <td class="border p-2 sm:p-3">${member.phone}</td>
-          <td class="border p-2 sm:p-3">${member.weight || '-'} ฿ฬใ</td>
+          <td class="border p-2 sm:p-3">${member.weight || '-'} ูุฌู…</td>
           <td class="border p-2 sm:p-3">
             ${member.membershipType}
-            ${member.membershipType === 'VIP' ? '?' : ''}
+            ${member.membershipType === 'VIP' ? 'โญ' : ''}
           </td>
-          <td class="border p-2 sm:p-3">${member.amount} ฬ.ใ</td>
+          <td class="border p-2 sm:p-3">${member.amount} ุฌ.ู…</td>
           <td class="border p-2 sm:p-3 ${hasDebt ? 'text-red-600 font-bold' : ''}">
-            ${member.debt || 0} ฬ.ใ
+            ${member.debt || 0} ุฌ.ู…
           </td>
           <td class="border p-2 sm:p-3 ${isExpired ? 'text-red-600 font-bold' : ''}">
             ${new Date(member.endDate).toLocaleDateString('ar-EG')}
-            ${isExpired ? ' (ใไสๅํ)' : ''}
+            ${isExpired ? ' (ู…ูุชูู)' : ''}
           </td>
           <td class="border p-2 sm:p-3">${member.trainer}</td>
           <td class="border p-2 sm:p-3 no-print">
             <div class="flex gap-2 justify-center">
               <button class="bg-blue-500 hover:bg-blue-600 text-white px-2 sm:px-3 py-1 rounded text-xs" onclick="openModal(${members.indexOf(member)})">
-                สฺฯํแ
+                ุชุนุฏูู
               </button>
               <button class="bg-green-500 hover:bg-green-600 text-white px-2 sm:px-3 py-1 rounded text-xs" onclick="extendMembership(${members.indexOf(member)})">
-                สใฯํฯ
+                ุชู…ุฏูุฏ
               </button>
               <button class="bg-red-500 hover:bg-red-600 text-white px-2 sm:px-3 py-1 rounded text-xs" onclick="deleteMember(${members.indexOf(member)})">
-                อะÝ
+                ุญุฐู
               </button>
             </div>
           </td>
@@ -471,7 +471,7 @@
     }
 
     function deleteMember(index) {
-      if (confirm('ๅแ รไส ใสร฿ฯ ใไ อะÝ ๅะว วแใิสั฿ฟ')) {
+      if (confirm('ูู ุฃูุช ู…ุชุฃูุฏ ู…ู ุญุฐู ูุฐุง ุงูู…ุดุชุฑูุ')) {
         members.splice(index, 1);
         saveToLocalStorage();
         updateTable();
@@ -485,16 +485,16 @@
       
       const startDate = currentEndDate < today ? new Date() : currentEndDate;
       
-      const extensionPeriod = prompt(`วฮสั Ýสัษ วแสใฯํฯ แÜ ${member.name}:
-      1. ิๅั ๆวอฯ (120 ฬ.ใ)
-      2. ิๅัํไ (150 ฬ.ใ)
-      3. 3 ริๅั (200 ฬ.ใ)
-      4. 4 ริๅั (350 ฬ.ใ)
-      5. 5 ริๅั (450 ฬ.ใ)
-      6. 6 ริๅั (550 ฬ.ใ)
-      7. ำไษ ฿วใแษ (VIP - 1000 ฬ.ใ)
+      const extensionPeriod = prompt(`ุงุฎุชุฑ ูุชุฑุฉ ุงูุชู…ุฏูุฏ ูู€ ${member.name}:
+      1. ุดูุฑ ูุงุญุฏ (120 ุฌ.ู…)
+      2. ุดูุฑูู (150 ุฌ.ู…)
+      3. 3 ุฃุดูุฑ (200 ุฌ.ู…)
+      4. 4 ุฃุดูุฑ (350 ุฌ.ู…)
+      5. 5 ุฃุดูุฑ (450 ุฌ.ู…)
+      6. 6 ุฃุดูุฑ (550 ุฌ.ู…)
+      7. ุณูุฉ ูุงู…ูุฉ (VIP - 1000 ุฌ.ู…)
       
-      รฯฮแ วแัÞใ วแใุแๆศ:`);
+      ุฃุฏุฎู ุงูุฑูู… ุงูู…ุทููุจ:`);
       
       if (!extensionPeriod) return;
       
@@ -532,19 +532,19 @@
           member.membershipType = 'VIP';
           break;
         default:
-          alert('วฮสํวั Ûํั ีอํอ');
+          alert('ุงุฎุชูุงุฑ ุบูุฑ ุตุญูุญ');
           return;
       }
       
       const newEndDate = new Date(startDate);
       newEndDate.setMonth(startDate.getMonth() + monthsToAdd);
       
-      if (confirm(`สใฯํฯ วิสัว฿ ${member.name} อส์ ${newEndDate.toLocaleDateString('ar-EG')} ศใศแÛ ลึวÝํ ${additionalAmount} ฬ.ใฟ`)) {
+      if (confirm(`ุชู…ุฏูุฏ ุงุดุชุฑุงู ${member.name} ุญุชู ${newEndDate.toLocaleDateString('ar-EG')} ุจู…ุจูุบ ุฅุถุงูู ${additionalAmount} ุฌ.ู…ุ`)) {
         member.endDate = newEndDate.toISOString().split('T')[0];
         member.amount = (parseInt(member.amount) || 0) + additionalAmount;
         saveToLocalStorage();
         updateTable();
-        alert('สใ สใฯํฯ วแวิสัว฿ ศไฬวอ!');
+        alert('ุชู… ุชู…ุฏูุฏ ุงูุงุดุชุฑุงู ุจูุฌุงุญ!');
       }
     }
 
@@ -570,12 +570,12 @@
             members = data;
             saveToLocalStorage();
             updateTable();
-            alert('สใ วำสํัวฯ วแศํวไวส ศไฬวอ!');
+            alert('ุชู… ุงุณุชูุฑุงุฏ ุงูุจูุงูุงุช ุจูุฌุงุญ!');
           } else {
-            throw new Error('ีํÛษ วแใแÝ Ûํั ีอํอษ');
+            throw new Error('ุตูุบุฉ ุงูู…ูู ุบูุฑ ุตุญูุญุฉ');
           }
         } catch(err) {
-          alert('ฮุร Ýํ วำสํัวฯ วแศํวไวส: ' + err.message);
+          alert('ุฎุทุฃ ูู ุงุณุชูุฑุงุฏ ุงูุจูุงูุงุช: ' + err.message);
         }
       };
       
@@ -621,7 +621,7 @@
       updateTable();
       closeModalWindow();
       
-      alert(editIndex !== null ? 'สใ สอฯํห ศํวไวส วแใิสั฿ ศไฬวอ' : 'สใ ลึวÝษ วแใิสั฿ ศไฬวอ');
+      alert(editIndex !== null ? 'ุชู… ุชุญุฏูุซ ุจูุงูุงุช ุงูู…ุดุชุฑู ุจูุฌุงุญ' : 'ุชู… ุฅุถุงูุฉ ุงูู…ุดุชุฑู ุจูุฌุงุญ');
     };
 
     printBtn.onclick = () => {
@@ -631,7 +631,7 @@
         <html lang="ar" dir="rtl">
         <head>
           <meta charset="UTF-8">
-          <title>฿ิÝ ใิสั฿ํไ วแรศุวแ ฬํใ</title>
+          <title>ูุดู ู…ุดุชุฑููู ุงูุฃุจุทุงู ุฌูู…</title>
           <style>
             body { font-family: Arial, sans-serif; margin: 20px; }
             h1 { text-align: center; margin-bottom: 20px; }
@@ -652,16 +652,16 @@
         <body>
           <div class="header">
             <div class="logo-container">
-              <img src="gym_logo.jpg" alt="ิฺวั วแีวแษ" class="logo" onerror="this.style.display='none'">
+              <img src="gym_logo.jpg" alt="ุดุนุงุฑ ุงูุตุงูุฉ" class="logo" onerror="this.style.display='none'">
               <div>
-                <div style="font-size: 24px; font-weight: bold;">วแรศุวแ ฬํใ</div>
-                <div style="font-size: 18px;">฿ิÝ วแใิสั฿ํไ</div>
+                <div style="font-size: 24px; font-weight: bold;">ุงูุฃุจุทุงู ุฌูู…</div>
+                <div style="font-size: 18px;">ูุดู ุงูู…ุดุชุฑููู</div>
               </div>
             </div>
             <div class="captain-info">
-              <img src="captain.jpg" alt="ีๆัษ วแ฿วศสไ" class="captain-img" onerror="this.style.display='none'">
+              <img src="captain.jpg" alt="ุตูุฑุฉ ุงููุงุจุชู" class="captain-img" onerror="this.style.display='none'">
               <div>
-                <p style="font-weight: bold;">วแ฿วศสไ/ ใอใฯ ฺแํ</p>
+                <p style="font-weight: bold;">ุงููุงุจุชู/ ู…ุญู…ุฏ ุนูู</p>
                 <p>01121966440</p>
               </div>
             </div>
@@ -669,15 +669,15 @@
           <table>
             <thead>
               <tr>
-                <th>ใ</th>
-                <th>วแวำใ</th>
-                <th>วแๅวสÝ</th>
-                <th>วแๆาไ</th>
-                <th>ไๆฺ วแวิสัว฿</th>
-                <th>วแใฯÝๆฺ</th>
-                <th>วแใสศÞํ</th>
-                <th>สวัํฮ วแวไสๅวม</th>
-                <th>วแใฯัศ</th>
+                <th>ู…</th>
+                <th>ุงูุงุณู…</th>
+                <th>ุงููุงุชู</th>
+                <th>ุงููุฒู</th>
+                <th>ููุน ุงูุงุดุชุฑุงู</th>
+                <th>ุงูู…ุฏููุน</th>
+                <th>ุงูู…ุชุจูู</th>
+                <th>ุชุงุฑูุฎ ุงูุงูุชูุงุก</th>
+                <th>ุงูู…ุฏุฑุจ</th>
               </tr>
             </thead>
             <tbody>
@@ -692,13 +692,13 @@
                     <td>${idx + 1}</td>
                     <td>${member.name}</td>
                     <td>${member.phone}</td>
-                    <td>${member.weight || '-'} ฿ฬใ</td>
-                    <td>${member.membershipType} ${member.membershipType === 'VIP' ? '?' : ''}</td>
-                    <td>${member.amount} ฬ.ใ</td>
-                    <td class="${hasDebt ? 'debt' : ''}">${member.debt || 0} ฬ.ใ</td>
+                    <td>${member.weight || '-'} ูุฌู…</td>
+                    <td>${member.membershipType} ${member.membershipType === 'VIP' ? 'โญ' : ''}</td>
+                    <td>${member.amount} ุฌ.ู…</td>
+                    <td class="${hasDebt ? 'debt' : ''}">${member.debt || 0} ุฌ.ู…</td>
                     <td class="${isExpired ? 'expired' : ''}">
                       ${new Date(member.endDate).toLocaleDateString('ar-EG')}
-                      ${isExpired ? ' (ใไสๅํ)' : ''}
+                      ${isExpired ? ' (ู…ูุชูู)' : ''}
                     </td>
                     <td>${member.trainer}</td>
                   </tr>
@@ -708,16 +708,16 @@
           </table>
           <div class="signatures">
             <div>
-              <p>วแใฯํั วแฺวใ</p>
-              <p style="margin-top: 30px;">วแ฿วศสไ ใอใฯ ฺแํ</p>
+              <p>ุงูู…ุฏูุฑ ุงูุนุงู…</p>
+              <p style="margin-top: 30px;">ุงููุงุจุชู ู…ุญู…ุฏ ุนูู</p>
             </div>
             <div>
-              <p>ใุๆั วแไูวใ</p>
-              <p style="margin-top: 30px;">ใอใฯ ลํๅวศ</p>
+              <p>ู…ุทูุฑ ุงููุธุงู…</p>
+              <p style="margin-top: 30px;">ู…ุญู…ุฏ ุฅููุงุจ</p>
             </div>
           </div>
           <div class="date">
-            สวัํฮ วแุศวฺษ: ${new Date().toLocaleDateString('ar-EG')}
+            ุชุงุฑูุฎ ุงูุทุจุงุนุฉ: ${new Date().toLocaleDateString('ar-EG')}
           </div>
         </body>
         </html>
@@ -735,12 +735,12 @@
         const endDate = new Date(startDate);
         
         switch(this.value) {
-          case 'ิๅัํ':
+          case 'ุดูุฑู':
             endDate.setMonth(startDate.getMonth() + 1);
             document.getElementById('amount').value = '120';
             document.getElementById('debt').value = '0';
             break;
-          case 'ํๆใํ':
+          case 'ููู…ู':
             endDate.setDate(startDate.getDate() + 1);
             document.getElementById('amount').value = '15';
             document.getElementById('debt').value = '0';
@@ -763,10 +763,10 @@
       const endDate = new Date(startDate);
       
       switch(membershipType) {
-        case 'ิๅัํ':
+        case 'ุดูุฑู':
           endDate.setMonth(startDate.getMonth() + 1);
           break;
-        case 'ํๆใํ':
+        case 'ููู…ู':
           endDate.setDate(startDate.getDate() + 1);
           break;
         case 'VIP':
@@ -798,7 +798,7 @@
     };
 
     document.getElementById('logoutBtn')?.addEventListener('click', () => {
-      // แว สÞใ ศใำอ localStorage ฺไฯ สำฬํแ วแฮัๆฬ
+      // ูุง ุชูู… ุจู…ุณุญ localStorage ุนูุฏ ุชุณุฌูู ุงูุฎุฑูุฌ
       location.reload();
     });
   </script>
